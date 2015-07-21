@@ -5,7 +5,7 @@
 module.exports = {
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://localhost/penninsula-dev'
+    uri:process.env.MONGOLAB_URI || 'mongodb://localhost/penninsula-dev'
   },
 
   seedDB: true
